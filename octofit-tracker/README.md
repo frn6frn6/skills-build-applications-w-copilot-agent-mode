@@ -27,3 +27,13 @@ Open http://localhost:5173
 API
 - GET /health -> { status: 'ok' }
 
+Seeding the database
+
+You can populate the MongoDB database with sample workouts for development using the seed script:
+
+  cd octofit-tracker/backend
+  # Ensure MongoDB is running on mongodb://localhost:27017 (or set MONGO_URI)
+  npm run seed
+
+This will clear the workouts collection and insert a small set of sample documents.
+
